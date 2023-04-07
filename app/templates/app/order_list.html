@@ -1,0 +1,26 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<h1>Список заказов</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Заказ №</th>
+            <th scope="col">Стоимость,$</th>
+            <th scope="col">Срок поставки</th>
+            <th scope="col">Стоимость,RUB</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for object in object_list %}
+          <tr>
+              <td>{{ object.id }}</td>
+              <td>{{ object.order_number }}</td>
+              <td>{{ object.prise_usd }}</td>
+              <td>{{ object.delivery_time }}</td>
+              <td>{{ object.prise_rub }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
