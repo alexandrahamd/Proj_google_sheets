@@ -1,4 +1,5 @@
 Программа для работы с сервисом Goggle Sheets
+ссылка на документ https://docs.google.com/spreadsheets/d/1xYdrkp6aXGi3HY3g5MaTOBuRcvihBlSyGVoxbHRI-OE/edit#gid=0
 
 1. Получает данные с документа при помощи Google API.
 2. Данные добавляются в БД, в том же виде, что и в файле –источнике, с добавлением колонки «стоимость в руб.»
