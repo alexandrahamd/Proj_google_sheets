@@ -15,7 +15,8 @@ import datetime as DT
 
 @shared_task
 def send_massage_telegram():
-    print('send_massage_telegram')
+    """функция отправки сообщения в телеграм"""
+
     orders = Order.objects.all()
     now_day = datetime.date.today()
     # перебор каждого заказа, для дальнейшей проверки срока поставки
